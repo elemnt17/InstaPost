@@ -3,36 +3,29 @@ import { deepPurple } from "@material-ui/core/colors";
 
 export default makeStyles((theme) => ({
   appBar: {
-    borderRadius: 15,
-    margin: "30px 0",
+    position: "sticky",
+    top: "0px",
     display: "flex",
     flexDirection: "row",
     justifyContent: "space-between",
     alignItems: "center",
-    padding: "10px 50px",
-    backgroundColor: "rgba(187, 187, 215, 0.69)",
+    padding: "10px 30px",
+    backgroundColor: "rgba(187, 187, 215)",
   },
   heading: {
-    color: "rgba(4, 6, 136, 1)",
+    color: "#1a1a1a",
     textDecoration: "none",
     fontFamily: "times new roman",
   },
-  image: {
-    marginLeft: "15px",
-  },
-  toolbar: {
+  innerProfile: {
+    cursor: "pointer",
     display: "flex",
-    justifyContent: "flex-end",
-    width: "400px",
-  },
-  profile: {
-    display: "flex",
-    justifyContent: "space-between",
-    width: "400px",
+    alignItems: "center",
   },
   userName: {
     display: "flex",
     alignItems: "center",
+    justifyItems: "center",
   },
   brandContainer: {
     display: "flex",
@@ -41,5 +34,26 @@ export default makeStyles((theme) => ({
   purple: {
     color: theme.palette.getContrastText(deepPurple[500]),
     backgroundColor: deepPurple[500],
+  },
+  menu: {
+    marginTop: "60px",
+    "& .MuiPaper-root": {
+      borderTopLeftRadius: "0px",
+      borderTopRightRadius: "0px",
+      boxShadow: "none",
+    },
+    "& .MuiList-root": {
+      backgroundColor: "rgba(187, 187, 215)",
+    },
+    "& .MuiList-padding": {
+      padding: "3px 0px",
+    },
+    "& .MuiListItem-gutters": {
+      paddingLeft: "10px",
+      paddingRight: "10px",
+    },
+    "& .MuiButtonBase-root": {
+      padding: "5px 10px",
+    },
   },
 }));
